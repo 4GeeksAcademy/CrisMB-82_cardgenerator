@@ -1,5 +1,72 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-}
+
+body {
+    background-color: #007a33; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .myCard {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .superior, .inferior {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+
+  .valor {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+ 
+  .superior {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  
+  .inferior {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg); 
+  }
+  
+
+  #generateBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #generateBtn:hover {
+    background-color: #e6b800;
+  }
+  
